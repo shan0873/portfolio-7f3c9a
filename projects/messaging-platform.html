@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>메시징 플랫폼 이관과 채널 분리 · 안세훈</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">전체 프로젝트</a>
+
+  <header class="site-header">
+    <p class="role">카카오페이증권 · 2025 상반기 · Product Manager</p>
+    <h1>메시징 플랫폼 이관과<br>채널 분리</h1>
+    <p class="tagline">인프라 문제를 리텐션 문제로 정의했습니다.</p>
+  </header>
+
+  <section class="section">
+    <h2><span class="n">01</span>문제</h2>
+    <p>증권 메시지가 모회사 채널에 종속되어 있었습니다. 한 계정에 하루 한 통이라는 제약이 걸려 있어,
+       증권 쪽에서 보내고 싶은 메시지가 있어도 그날 다른 메시지가 먼저 나가면 보낼 수 없었습니다.</p>
+    <p>동시에 구 메시징 플랫폼은 유지보수 리소스만 소모하고 있었습니다.
+       템플릿이 쌓여 있고 발송량은 큰데, 개선을 얹을 수 없는 구조였습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">02</span>가설</h2>
+    <p>채널 종속에서 벗어나면 마케팅 자유도가 올라가고, 그것이 <strong>리텐션</strong>으로 이어진다고 봤습니다.
+       발송 여력이 없어서 못 보내는 메시지 중에는 사용자를 다시 데려올 메시지도 있었기 때문입니다.
+       인프라 과제로 보이는 일을 리텐션 과제로 정의한 것이 이 프로젝트의 출발점이었습니다.</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 640 200" role="img" aria-labelledby="fig-t fig-d">
+        <title id="fig-t">채널 종속 구조와 분리 후 구조 비교</title>
+        <desc id="fig-d">모회사 채널에 종속되어 하루 한 통 제약을 받던 구조에서 증권 자체 채널로 분리했습니다.</desc>
+
+        <text x="0" y="16" class="svg-label--sm">이전</text>
+        <rect x="0" y="26" width="150" height="42" rx="3" class="svg-box"/>
+        <text x="75" y="52" class="svg-label" text-anchor="middle">증권 메시지</text>
+        <path d="M158 47 H206" class="svg-arrow" marker-end="url(#m1)"/>
+        <rect x="214" y="26" width="190" height="42" rx="3" class="svg-box"/>
+        <text x="309" y="52" class="svg-label" text-anchor="middle">모회사 채널</text>
+        <text x="420" y="52" class="svg-label--sm" style="fill:var(--down)">1계정 1일 1통 제약</text>
+
+        <text x="0" y="126" class="svg-label--sm">이후</text>
+        <rect x="0" y="136" width="150" height="42" rx="3" class="svg-box--accent"/>
+        <text x="75" y="162" class="svg-label" text-anchor="middle">증권 메시지</text>
+        <path d="M158 157 H206" class="svg-arrow--accent" marker-end="url(#m2)"/>
+        <rect x="214" y="136" width="190" height="42" rx="3" class="svg-box--accent"/>
+        <text x="309" y="162" class="svg-label" text-anchor="middle">증권 자체 채널</text>
+        <text x="420" y="162" class="svg-label--sm" style="fill:var(--up)">발송 여력 확보</text>
+
+        <defs>
+          <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" style="fill:var(--muted)"/>
+          </marker>
+          <marker id="m2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="figure__caption">제약을 없애는 일이 곧 사용자에게 닿을 기회를 늘리는 일이었습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">03</span>접근</h2>
+    <p>대규모 발송을 담당하던 구 플랫폼을 신규 메시징 플랫폼으로 이관하면서,
+       단순 이전에 그치지 않도록 몇 가지를 함께 설계했습니다.
+       모회사와 증권 사이의 템플릿 검증 로직, 광고성 정보 알림과 발송 제어,
+       발송 성과를 측정할 수 있는 구조를 넣었습니다.</p>
+    <p>같은 시기에 강제 업데이트를 자체적으로 통제할 수단이 없다는 문제도 함께 다뤘습니다.
+       거래 환경 변화에 대응하려면 클라이언트를 특정 버전 이상으로 올릴 수 있어야 했는데,
+       그 권한이 증권 쪽에 없었습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">04</span>결과</h2>
+    <p>플랫폼 이관을 완료하고 채널을 분리해 발송 여력을 확보했습니다.
+       이후 모으기 알림 세분화, 수익률 리마인드, 프리마켓·애프터마켓 알림 등
+       종속 구조에서는 시도할 수 없던 메시지들을 실제로 운영했습니다.</p>
+  </section>
+
+  <footer class="site-footer">
+    <p><a href="../index.html">전체 프로젝트로 돌아가기</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

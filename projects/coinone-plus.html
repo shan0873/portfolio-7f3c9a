@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>플러스 — 참여 사다리 · 안세훈</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">전체 프로젝트</a>
+
+  <header class="site-header">
+    <p class="role">코인원 · 2023.10 ~ 2023.12 · Product Owner</p>
+    <h1>플러스<br>— 참여 사다리</h1>
+    <p class="tagline">병목은 상품의 매력도가 아니라<br>첫 계단이었습니다.</p>
+  </header>
+
+  <div class="metric-row">
+    <div class="metric">
+      <span class="metric__label">동의 전환율</span>
+      <span class="metric__val metric__val--up">약 7배</span>
+      <span class="metric__note">개선</span>
+    </div>
+    <div class="metric">
+      <span class="metric__label">참여자</span>
+      <span class="metric__val metric__val--up">약 2배</span>
+      <span class="metric__note">분기 내</span>
+    </div>
+    <div class="metric">
+      <span class="metric__label">운영 수수료 수익</span>
+      <span class="metric__val metric__val--up">약 3배</span>
+      <span class="metric__note">개선</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2><span class="n">01</span>문제</h2>
+    <p>거래하지 않는 자산을 그냥 두는 사용자가 많았습니다. 보유만 해도 리워드를 받을 수 있는
+       예치 서비스가 이미 있었는데, <strong>그런 게 있다는 인지 자체가 낮았습니다.</strong></p>
+    <p>배경에는 다른 질문도 있었습니다. 거래가 부진한 시장에서 거래 수수료 외의 수익 모델이
+       실제로 성립하는지 확인이 필요했습니다. 예치는 그 가능성을 검증할 수 있는 상품이었습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">02</span>가설</h2>
+    <p>허들이 가장 낮은 단계부터 태우면 참여가 계단식으로 커진다고 봤습니다.
+       한 번에 스테이킹까지 끌고 가려 하지 말고,
+       <strong>동의 → 리워드 획득 경험 → 상위 상품 참여</strong> 순서로 나눠 올리는 것입니다.</p>
+    <p>리워드를 실제로 받아본 경험이 다음 단계로 올라갈 동기가 될 것이라는 게 핵심 가정이었습니다.</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 640 250" role="img" aria-labelledby="fig1-t fig1-d">
+        <title id="fig1-t">참여 사다리 구조</title>
+        <desc id="fig1-d">허들이 가장 낮은 데일리 동의부터 시작해 리워드 획득 경험을 거쳐 상위 상품 참여로 올라가는 3단 구조입니다.</desc>
+
+        <rect x="14" y="164" width="196" height="62" rx="3" class="svg-box--accent"/>
+        <text x="112" y="188" class="svg-label" text-anchor="middle">데일리 동의</text>
+        <text x="112" y="206" class="svg-label--sm" text-anchor="middle">허들 최저 · 여기가 병목</text>
+
+        <rect x="222" y="100" width="196" height="62" rx="3" class="svg-box"/>
+        <text x="320" y="124" class="svg-label" text-anchor="middle">리워드 획득 경험</text>
+        <text x="320" y="142" class="svg-label--sm" text-anchor="middle">실제로 받아본다</text>
+
+        <rect x="430" y="36" width="196" height="62" rx="3" class="svg-box"/>
+        <text x="528" y="60" class="svg-label" text-anchor="middle">상위 상품 참여</text>
+        <text x="528" y="78" class="svg-label--sm" text-anchor="middle">스테이킹 · 신규 상품</text>
+
+        <path d="M210 172 L222 140" class="svg-arrow--accent"/>
+        <path d="M418 108 L430 76" class="svg-arrow--accent"/>
+
+        <line x1="14" y1="238" x2="626" y2="238" class="svg-axis"/>
+        <text x="14" y="20" class="svg-label--sm">참여 깊이</text>
+      </svg>
+      <figcaption class="figure__caption">한 번에 끌어올리지 않고, 가장 낮은 계단을 먼저 열었습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">03</span>접근</h2>
+    <p>분기 목표를 놓고 이니셔티브를 발굴해 우선순위를 매겼습니다. 상품 라인업 확대,
+       동의 플로우 개선, 인앱·푸시 캠페인, 상품 페이지 개편, 신규 확장 검토가 후보였고,
+       그중 <strong>동의 플로우 개선</strong>에 가장 큰 비중을 뒀습니다.</p>
+    <p>미동의 상태로 상품 페이지에 들어온 사용자에게 안내를 붙이고,
+       상품 상세를 거쳐 이해하고 동의하는 경로를 만들었습니다.
+       클라이언트와 백엔드 구조상 손댈 수 있는 범위를 먼저 확정하고 그 안에서 최대치를 뽑았습니다.</p>
+    <p>동시에 상품도 늘렸습니다. 거래소 내 보유 자산 수준을 보고 적정 위임 수량을 자산·재무 부서와 조율했고,
+       네트워크별 특성이 달라 어드민 기능을 표준화해 운영 부담을 줄였습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">04</span>결과</h2>
+    <p>동의 전환율이 <span class="delta--up">약 7배</span> 개선됐습니다.
+       참여자는 <span class="delta--up">약 2배</span>가 됐고,
+       서비스 운영 수수료 수익은 <span class="delta--up">약 3배</span>로 늘었습니다.
+       거래가 부진한 시장에서 부가 수익 모델이 성립한다는 것도 함께 확인됐습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">05</span>학습</h2>
+    <p>병목은 상품의 매력도가 아니라 <strong>동의 절차 그 자체</strong>였습니다.
+       같은 상품, 같은 리워드였는데 진입 경로만 바꿔 전환이 몇 배가 됐습니다.
+       상품을 더 좋게 만드는 데 시간을 썼다면 이 결과는 나오지 않았을 것입니다.</p>
+    <p>이후로 "왜 안 쓰는가"를 물을 때 상품보다 경로를 먼저 봅니다.
+       사용자가 상품을 거절한 것인지, 아니면 상품에 도달하기 전에 이탈한 것인지는 완전히 다른 문제고,
+       대부분은 후자였습니다.</p>
+  </section>
+
+  <footer class="site-footer">
+    <p><a href="../index.html">전체 프로젝트로 돌아가기</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

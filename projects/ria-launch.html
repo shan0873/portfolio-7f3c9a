@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RIA 신규 서비스 0→1 · 안세훈</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">전체 프로젝트</a>
+
+  <header class="site-header">
+    <p class="role">카카오페이증권 · 2026.01 ~ 2026.03 · Product Manager</p>
+    <h1>RIA 신규 서비스 0→1</h1>
+    <p class="tagline">스콥 정의부터 출시까지 3개월.</p>
+  </header>
+
+  <section class="section">
+    <h2><span class="n">01</span>문제</h2>
+    <p>국내시장 복귀 계좌라는 신규 상품을 만들어야 했습니다.
+       기존 프로덕트 어디에 붙일지, 무엇까지 제공할지가 정의되어 있지 않은 상태에서 시작했습니다.</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">02</span>접근</h2>
+    <p>먼저 프로덕트 스콥을 정의하고, 요건을 여섯 갈래로 나눠 문서화했습니다 —
+       계좌개설, 홈, 투자, 관리, 절세관리, 입고·환전. 갈래를 먼저 나눈 이유는
+       각 영역의 담당 부서가 달라서, 문서 단위가 곧 협업 단위가 되기 때문이었습니다.</p>
+    <p>부서별 일정 관리까지 직접 끌었습니다. 신규 서비스는 스펙보다 일정 의존성에서 무너지는 경우가 많아,
+       각 부서의 착수 가능 시점을 먼저 맞춰놓고 그 위에 구현 순서를 얹었습니다.</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 640 200" role="img" aria-labelledby="fig-t fig-d">
+        <title id="fig-t">요건 6종을 하나의 상품으로 묶는 구조</title>
+        <desc id="fig-d">계좌개설, 홈, 투자, 관리, 절세관리, 입고·환전 여섯 영역을 각각 문서화해 하나의 서비스로 통합했습니다.</desc>
+
+        <rect x="8"   y="24" width="96" height="46" rx="3" class="svg-box"/><text x="56"  y="52" class="svg-label" text-anchor="middle">계좌개설</text>
+        <rect x="112" y="24" width="96" height="46" rx="3" class="svg-box"/><text x="160" y="52" class="svg-label" text-anchor="middle">홈</text>
+        <rect x="216" y="24" width="96" height="46" rx="3" class="svg-box"/><text x="264" y="52" class="svg-label" text-anchor="middle">투자</text>
+        <rect x="320" y="24" width="96" height="46" rx="3" class="svg-box"/><text x="368" y="52" class="svg-label" text-anchor="middle">관리</text>
+        <rect x="424" y="24" width="96" height="46" rx="3" class="svg-box"/><text x="472" y="52" class="svg-label" text-anchor="middle">절세관리</text>
+        <rect x="528" y="24" width="104" height="46" rx="3" class="svg-box"/><text x="580" y="52" class="svg-label" text-anchor="middle">입고·환전</text>
+
+        <path d="M56 78 V102 H580 V78" class="svg-arrow"/>
+        <path d="M320 102 V126" class="svg-arrow--accent" marker-end="url(#r1)"/>
+
+        <rect x="170" y="134" width="300" height="50" rx="3" class="svg-box--accent"/>
+        <text x="320" y="164" class="svg-label" text-anchor="middle">RIA 계좌 · 2026.03 출시</text>
+
+        <defs>
+          <marker id="r1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="figure__caption">문서 단위를 협업 단위와 일치시켰습니다.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <h2><span class="n">03</span>결과</h2>
+    <p>착수 3개월 만에 출시했습니다. 운영 테스트와 진입점 오픈,
+       종합계좌를 함께 개설하는 경우의 분기 처리까지 마무리했습니다.</p>
+  </section>
+
+  <footer class="site-footer">
+    <p><a href="../index.html">전체 프로젝트로 돌아가기</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
