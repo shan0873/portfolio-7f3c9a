@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>홈 넛지 실험 시리즈 · 안세훈</title>
+<title>홈 거래전환 넛지 실험 · 안세훈</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
 
   <header class="site-header">
     <p class="role">카카오페이증권 · 2026 · Product Manager</p>
-    <h1>홈 넛지 실험 시리즈</h1>
-    <p class="tagline">분기마다 위너를 갱신하고,<br>다음 변수로 계속 이어간 실험 프로그램입니다.</p>
+    <h1>홈 거래전환 넛지 실험</h1>
+    <p class="tagline">회차별 위너를 갱신,<br>다음 변수로 계속 개선을 이어간 실험</p>
   </header>
 
   <div class="metric-row">
@@ -39,8 +39,8 @@
   <section class="section">
     <h2><span class="n">01</span>문제</h2>
     <ul>
-      <li>모으기까지는 하는데 일반거래로 넘어가지 않는 병목이 있었음</li>
-      <li>퍼널을 뜯어보니 유입 노출→종목확인 단계는 60.8%로 준수했지만, 종목선택→주문완결 단계에서 5.74%까지 급감 — 병목이 어디인지 명확히 보임</li>
+      <li>개설 퍼널 내 모으기까지는 유도가 가능하나 일반거래로 넘어가지 않는 병목이 존재</li>
+      <li>퍼널 분해 시 유입 노출→종목확인 단계는 60.8%로 준수했지만, 종목선택→주문완결 단계에서 5.74%까지 감소</li>
     </ul>
   </section>
 
@@ -79,14 +79,14 @@
           </marker>
         </defs>
       </svg>
-      <figcaption class="figure__caption">매 라운드마다 이전 라운드의 위너를 고정하고 다음 변수 하나만 바꿨습니다.</figcaption>
+      <figcaption class="figure__caption">매 라운드마다 이전 라운드의 위너를 고정, 다음 변수를 제공</figcaption>
     </figure>
 
     <ul>
       <li><strong>뿌리</strong>: 모으기 완료 직후 일반거래로 넘어가도록 넛지 — 대조군 없이 우선 넛지 자체의 효과부터 확인</li>
       <li><strong>1차</strong>: 홈 화면에 종목 리스트(급상승·인기거래·인기배당)를 노출할지 여부를 A/B — Control(미노출) vs Treatment(노출)</li>
-      <li><strong>2차</strong>: 리스트를 노출하기로 확정한 뒤, "무엇을 보여줄지(주제)"와 "어떻게 보여줄지(UI)"를 각각 별도 실험으로 분리해 비교</li>
-      <li><strong>3차</strong>: 노출 위치(탭 vs 보유종목 하단)와 새로운 주제(고액 자산가 보유종목)를 설계 중</li>
+      <li><strong>2차</strong>: 리스트를 노출로 확정한 뒤, "무엇을 보여줄지(주제)"와 "어떻게 보여줄지(UI)"를 각각 별도 실험으로 분리 후 비교</li>
+      <li><strong>3차</strong>: 노출 위치(탭 vs 보유종목 하단)와 새로운 주제(고액 자산가 보유종목)를 설계</li>
     </ul>
   </section>
 
@@ -95,19 +95,19 @@
 
     <h3>뿌리 — 넛지 자체의 효과</h3>
     <ul>
-      <li>ISA 일반거래 전환 24.0%(<span class="delta--up">+4.6%p</span>), 연금 14.3%(<span class="delta--up">+4.0%p</span>) — 분기 중 최고치를 기록해 4월 전체 적용으로 확정</li>
+      <li>ISA 일반거래 전환 24.0%(<span class="delta--up">+4.6%p</span>), 연금 14.3%(<span class="delta--up">+4.0%p</span>) — 분기 중 최고치를 기록, 전체 적용으로 확정</li>
     </ul>
 
     <h3>1차 — 종목 리스트 노출 여부</h3>
     <ul>
       <li>전체 평균으로는 효과가 크지 않았음 — 연금 주문전환 <span class="delta--up">+0.18%p</span>, ISA <span class="delta--up">+0.08%p</span></li>
-      <li>그런데 <strong>신규 유저의 첫 주문만 따로 떼어보니 <span class="delta--up">+2.45%p</span> 유의</strong>했음 — 전체 평균에 묻혀 있던 효과를 코호트로 쪼개서 찾아냄</li>
+      <li>그러나 <strong>신규 유저의 첫 주문을 분리하여 확인 시 <span class="delta--up">+2.45%p</span> 유의</strong>함을 확인 — 전체 평균에 묻혀 있던 효과를 코호트로 분리하여 확인</li>
     </ul>
 
     <h3>2차 — 주제 vs UI</h3>
     <ul>
-      <li>주제를 "상위 10% 투자자가 보유한 종목"(소셜 프루프)으로 바꾸자 액션유도 <span class="delta--up">+20%p</span>, 최종 주문전환 <span class="delta--up">+0.81%p</span> 우위 — 압도적으로 강한 결과</li>
-      <li>반면 같은 정보를 카드에서 탭 UI로만 바꾼 별도 실험은 주문전환 <span class="delta--down">-1.5%p</span>로 오히려 역효과</li>
+      <li>주제를 "상위 10% 투자자가 보유한 종목"(소셜 프루프)으로 변경 후 액션유도 <span class="delta--up">+20%p</span>, 최종 주문전환 <span class="delta--up">+0.81%p</span> 우위 — 개선된 결과 확인</li>
+      <li>반면 같은 정보를 카드에서 탭 UI로만 바꾼 별도 실험은 주문전환 <span class="delta--down">-1.5%p</span>로 감소</li>
     </ul>
 
     <figure class="figure">
@@ -127,7 +127,7 @@
         <rect x="176" y="120" width="84" height="22" rx="2" class="svg-bar--down"/>
         <text x="166" y="136" class="svg-num" text-anchor="end" style="fill:var(--down)">-1.5%p</text>
       </svg>
-      <figcaption class="figure__caption">같은 화면에서 변수 하나만 바꿔 비교했습니다. 이긴 쪽은 형식이 아니라 내용이었습니다.</figcaption>
+      <figcaption class="figure__caption">내용이 변환 효과로 볼 수 있으나 탭 UI의 뎁스가 영향이 있지 않았는지 의심</figcaption>
     </figure>
 
     <h3>3차 — 다음 라운드 (설계 중)</h3>
@@ -139,9 +139,8 @@
   <section class="section">
     <h2><span class="n">04</span>학습</h2>
     <ul>
-      <li>전체 평균만 보면 실험이 죽은 것처럼 보일 때가 있음 — 신규 유저 코호트를 따로 떼어보고서야 진짜 효과(+2.45%p)를 확인함</li>
-      <li><strong>콘텐츠(무엇을 보여주는가)가 형식(어떻게 보여주는가)보다 강했음</strong> — 같은 정보를 다른 UI로 바꾼 실험은 오히려 역효과였고, 정보 자체를 바꾼 실험이 20배 가까운 차이로 이김</li>
-      <li>한 번의 큰 실험이 아니라, 매 라운드 위너를 고정하고 다음 변수 하나씩 바꿔가는 방식으로 4개월 넘게 이어감</li>
+      <li>전체 평균을 확인 시 실험의 명확한 결과 확인이 어려운 경우가 존재 — 신규 유저 코호트를 구분하여 실제 효과(+2.45%p)를 확인</li>
+      <li>한 번의 큰 실험보다, 매 라운드 위너를 고정하며 다음 변수 하나씩 바꿔가는 방식을 진행하면 더 개선된 효과를 기대할 수 있음 확인</li>
     </ul>
   </section>
 
