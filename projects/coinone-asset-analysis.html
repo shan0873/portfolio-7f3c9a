@@ -14,16 +14,16 @@
 
   <header class="site-header">
     <p class="role">코인원 · 2022.11 ~ 2023.02 · Product Owner</p>
-    <h1>자산분석<br>— 돌아오게 만들기</h1>
-    <p class="tagline">획득이 아니라 재방문을<br>성공 지표로 잡은 첫 프로젝트입니다.</p>
+    <h1>자산분석 기능 출시</h1>
+    <p class="tagline">고객의 정보 제공과 함께<br>리텐션을 유도한 프로젝트</p>
   </header>
 
   <section class="section">
     <h2><span class="n">01</span>문제</h2>
     <ul>
-      <li>거래소에 자산을 두고 있어도 그 가치가 어떻게 변했는지 확인할 방법이 없었음</li>
+      <li>거래소에 자산을 두고 있어도 순간의 수익률 정보외 기간별 내 자산이 어떻게 변했는지 확인할 방법이 없었음</li>
       <li>현재 보유 수량과 현재가는 보이지만, 매수가 대비 이익·손실 여부나 한 달간 자산 증감은 알 수 없었음</li>
-      <li>확인할 것이 없으면 돌아올 이유도 없음 — 시세가 크게 움직일 때만 들어오고 평소엔 앱을 열지 않는 상태</li>
+      <li>확인할 것이 없으면 돌아올 이유도 없을 것으로 판단 — 하락/횡보장인 경우 시세가 크게 움직일 때만 들어오고 평소엔 앱을 열지 않는 상태</li>
     </ul>
 
     <figure class="figure">
@@ -33,7 +33,7 @@
 
         <rect x="0" y="24" width="200" height="56" rx="3" class="svg-box"/>
         <text x="100" y="48" class="svg-label" text-anchor="middle">자산은 있지만</text>
-        <text x="100" y="66" class="svg-label" text-anchor="middle">변화를 볼 수 없다</text>
+        <text x="100" y="66" class="svg-label" text-anchor="middle">변화 흐름을 볼 수 없다</text>
 
         <path d="M208 52 H252" class="svg-arrow" marker-end="url(#ar)"/>
 
@@ -44,7 +44,7 @@
 
         <rect x="150" y="126" width="340" height="56" rx="3" class="svg-box--accent"/>
         <text x="320" y="150" class="svg-label" text-anchor="middle">주기별 손익을 제공한다</text>
-        <text x="320" y="168" class="svg-label--sm" text-anchor="middle">→ 확인하러 정기적으로 돌아온다</text>
+        <text x="320" y="168" class="svg-label--sm" text-anchor="middle">→ 확인하러 정기적으로 돌아올 것이다</text>
 
         <defs>
           <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -55,27 +55,27 @@
           </marker>
         </defs>
       </svg>
-      <figcaption class="figure__caption">기능이 아니라 재방문 동기를 설계하는 문제로 정의했습니다.</figcaption>
+      <figcaption class="figure__caption">실제 부재한 기능과 함께 재방문의 동기로 문제를 정의</figcaption>
     </figure>
   </section>
 
   <section class="section">
     <h2><span class="n">02</span>가설과 지표</h2>
     <ul>
-      <li><strong>가설</strong>: 주기별 손익을 볼 수 있으면 확인하러 정기적으로 돌아오고, 그 정보가 추가 거래·입출금 판단으로 이어진다</li>
-      <li><strong>성공지표</strong>: 인당 확인 빈도와 체류시간 — 신규 가입자 수나 기능 사용률이 아니라 <strong>재방문</strong>을 기준으로 삼은 첫 프로젝트</li>
-      <li>기능을 몇 명이 썼는지가 아니라, 쓴 사람이 더 자주 오는지를 봐야 한다고 판단</li>
+      <li><strong>가설</strong>: 주기별 손익과 정보를 볼 수 있으면 확인하러 정기적으로 돌아오고, 그 정보가 추가 거래·입출금 판단으로 이어질 것이다</li>
+      <li><strong>성공지표</strong>: 인당 확인 빈도와 체류시간 — 신규 가입자 수나 기능 사용률이 아니라 <strong>재방문</strong>을 기준으로 삼은 프로젝트</li>
+      <li>기능을 사용했던 사람이 더 자주 오는지를 봐야 한다고 판단</li>
     </ul>
   </section>
 
   <section class="section">
     <h2><span class="n">03</span>접근</h2>
     <ul>
-      <li>화면보다 <strong>손익을 무엇으로 정의할지</strong>부터 확정 — 원천 데이터, 원화·가상자산 입출금 처리, 수익률 계산 방식, 조회 가능 기간</li>
-      <li>이 정의가 흔들리면 화면 자체가 의미 없다고 판단해 우선순위를 앞에 둠</li>
-      <li>정의에 맞춰 데이터 파이프라인과 배치 주기를 설계 — 고객별 데이터 적재·조회 부하가 실제 제약이라 배치 주기가 곧 사용자가 체감하는 최신성이 됨</li>
+      <li>화면보다 <strong>제공 정보를 무엇으로 정의할지</strong>부터 확정 — 원천 데이터, 원화·가상자산 입출금 처리, 수익률 계산 방식, 조회 가능 기간</li>
+      <li>이 정의가 가장 중요하다고 판단해 우선순위를 앞에 둠</li>
+      <li>정의에 맞춰 데이터 파이프라인과 배치 주기가 설계됨 — 고객별 데이터 적재·조회 부하가 실제 제약이라 배치 주기가 곧 사용자가 체감하는 최신성이 됨</li>
       <li>블록체인·백엔드·웹·앱·인프라 담당과 부하 특이사항을 나눠 협의</li>
-      <li>배포 후 데이터가 의도대로 기록되는지 확인하고, 이벤트를 심어 실제 활용도를 모니터링</li>
+      <li>배포 후 데이터가 의도대로 기록되는지 확인, 이벤트 기준 실제 활용도를 모니터링</li>
     </ul>
   </section>
 
@@ -83,8 +83,8 @@
     <h2><span class="n">04</span>결과</h2>
     <ul>
       <li>자산분석(평가손익, 자산추이) 서비스 이용자의 <strong>주간 서비스 방문 빈도 0.3회 증대</strong></li>
-      <li>기능 자체의 사용률이 아니라, 기능을 쓴 사람이 더 자주 돌아온다는 것이 지표로 확인됨</li>
-      <li>출시 내용은 <a href="https://coinone.co.kr/info/notice/2519">코인원 공지</a>로 공개</li>
+      <li>기능 자체의 사용률과 함께 기능을 사용했던 사람이 더 자주 돌아온다는 것이 지표로 확인됨</li>
+      <li>참고) <a href="https://coinone.co.kr/info/notice/2519">코인원 공지</a></li>
     </ul>
   </section>
 
